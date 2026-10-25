@@ -1164,3 +1164,4 @@ async function iniciarServidor() {
 
 
 iniciarServidor();
+module.exports = app;

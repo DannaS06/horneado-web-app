@@ -1,0 +1,10 @@
+*   5e2fb4c fix: resolver conflicto de merge integrando ambas ramas
+|\  
+| * f3005d6 docs: cambio de version en rama A
+* | 4738899 docs: cambio de version en rama B
+|/  
+*   ca95cd3 Merge pull request #1 from DannaS06/feature/modulo-calidad
+|\  
+| * 54f4834 docs: agregar documentacion del proyecto y autoras en README
+|/  
+* 098278b feat: estructura inicial del proyecto Horneado
