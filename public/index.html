@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Horneado - Repostería virtual</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+
+        <div class="header-inner">
+
+            <a href="#/" class="logo" id="logoHome">
+                <span class="logo-icon">🍰</span>
+                <span class="logo-text">
+                    <strong>Horneado</strong>
+                    <small>Repostería virtual</small>
+                </span>
+            </a>
+
+            <nav class="nav" id="navPrincipal">
+
+                <a href="#/tienda" class="nav-link">Tienda</a>
+
+                <a href="#/pedidos" class="nav-link" id="navPedidos" hidden>Mis pedidos</a>
+
+                <a href="#/admin" class="nav-link nav-admin" id="navAdmin" hidden>Administración</a>
+
+            </nav>
+
+            <div class="header-actions">
+
+                <button class="cart-btn" id="btnCarrito" title="Carrito">
+                    🛒
+                    <span class="cart-badge" id="cartBadge" hidden>0</span>
+                </button>
+
+                <div class="user-area" id="userArea">
+                    <span class="user-spinner">…</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container" id="app">
+
+        <div class="loading-screen">
+            <div class="spinner"></div>
+            <p>Cargando Horneado…</p>
+        </div>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+
+        <div class="footer-inner">
+
+            <div>
+                <p class="footer-brand">🍰 Horneado</p>
+                <p class="footer-tag">Sistema web de repostería virtual</p>
+            </div>
+
+            <p class="footer-copy">
+                &copy; 2026 Horneado · Estándares y métricas del software
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- PANEL DE CARRITO -->
+    <div class="drawer-overlay" id="drawerOverlay" hidden></div>
+
+    <aside class="cart-drawer" id="cartDrawer" hidden>
+
+        <div class="drawer-header">
+
+            <h3>🛒 Tu carrito</h3>
+
+            <button class="drawer-close" id="btnCerrarCarrito" title="Cerrar">✕</button>
+
+        </div>
+
+        <div class="drawer-body" id="cartDrawerBody"></div>
+
+        <div class="drawer-footer" id="cartDrawerFooter"></div>
+
+    </aside>
+
+
+    <!-- NOTIFICACIONES -->
+    <div class="toast-container" id="toastContainer"></div>
+
+
+    <!-- MODALES -->
+    <div class="modal-overlay" id="modalOverlay" hidden>
+        <div class="modal" id="modalBox"></div>
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>

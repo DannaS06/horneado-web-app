@@ -1,0 +1,23 @@
+{
+  "name": "horneado",
+  "version": "1.0.0",
+  "description": "Sistema web de repostería virtual - tienda y panel de administración",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "reposteria",
+    "tienda",
+    "express",
+    "sqlite",
+    "horneado"
+  ],
+  "author": "Horneado",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.2.1",
+    "sql.js": "^1.14.2"
+  }
+}
